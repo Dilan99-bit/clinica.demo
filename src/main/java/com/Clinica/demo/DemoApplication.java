@@ -440,7 +440,7 @@ public class DemoApplication {
 					Cuota cuota = new Cuota();
 					cuota.setPaciente(paciente.get());
 					cuota.setNombrePaciente(paciente.get().getNombreCompleto());
-					cuota.setCedulaPaciente(paciente.get().getcedula());
+					cuota.setCedulaPaciente(paciente.get().getCedula());
 					cuota.setAfiliacion(afiliacion);
 					cuota.setTotalPagar(monto);
 					repo.save(cuota);

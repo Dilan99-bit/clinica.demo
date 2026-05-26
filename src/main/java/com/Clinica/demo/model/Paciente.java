@@ -18,6 +18,15 @@ public class Paciente extends Persona {
     
     @OneToMany(mappedBy = "paciente", cascade = CascadeType.ALL)
     private List<Citas> citas;
+    
+     public Paciente(){
+        super();
+    }
+
+        public Paciente(String nombreCompleto, int edad, String cedula, String telefono, String EPS) {
+        super(nombreCompleto, edad, cedula, telefono);
+        this.EPS = EPS;
+    }
 
 
     public Long getId() {
@@ -44,15 +53,6 @@ public class Paciente extends Persona {
         this.citas = citas;
     }
 
-    public Paciente(){
-        super();
-    }
-
-        public Paciente(String nombreCompleto, int edad, String cedula, String telefono, String EPS) {
-        super(nombreCompleto, edad, cedula, telefono);
-        this.EPS = EPS;
-    }
-
   
     public String getEPS() {
         return EPS;
@@ -67,7 +67,7 @@ public class Paciente extends Persona {
     public void mostrarInformacion() {
     System.out.println("====== DATOS DEL PACIENTE ======");
     System.out.println("Nombre: " + getNombreCompleto());
-    System.out.println("Cédula: " + getcedula());
+    System.out.println("Cédula: " + getCedula());
     System.out.println("Edad: " + getEdad());
     System.out.println("Teléfono: " + getTelefono());
     System.out.println("EPS: " + this.EPS);
