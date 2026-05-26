@@ -42,10 +42,11 @@ public abstract class Persona {
             this.edad = 0;
         }
     }
-    public String getcedula() {
+    public String getCedula() {
         return cedula;
     }
-    public void setcedula(String cedula) {
+
+    public void setCedula(String cedula) {
         this.cedula = cedula;
     }
     public String getTelefono() {

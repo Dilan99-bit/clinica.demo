@@ -20,6 +20,15 @@ public class Medico extends Persona {
     @OneToMany(mappedBy = "medico", cascade = CascadeType.ALL)
     private List<Citas> citas;
 
+    public Medico(){
+    super();
+    }
+    
+    public Medico(String nombreCompleto, int edad, String cedula, String telefono, String especialidad) {
+        super(nombreCompleto, edad, cedula, telefono);
+        this.especialidad = especialidad;
+    }
+
     public Long getId() {
         return id;
     }
@@ -43,16 +52,6 @@ public class Medico extends Persona {
     public void setCitas(List<Citas> citas) {
         this.citas = citas;
     }
-
- public Medico(){
-    super();
-    }
-    
-    public Medico(String nombreCompleto, int edad, String cedula, String telefono, String especialidad) {
-        super(nombreCompleto, edad, cedula, telefono);
-        this.especialidad = especialidad;
-    }
-
    
 
     public String getEspecialidad() {
@@ -68,7 +67,7 @@ public class Medico extends Persona {
     public void mostrarInformacion() {
     System.out.println("====== DATOS DE LOS MEDICOS ======");
     System.out.println("Nombre: " + getNombreCompleto());
-    System.out.println("Cédula: " + getcedula());
+    System.out.println("Cédula: " + getCedula());
     System.out.println("Edad: " + getEdad());
     System.out.println("Teléfono: " + getTelefono());
     System.out.println("Especialidad: " + this.especialidad);

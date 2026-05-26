@@ -14,6 +14,16 @@ public class Administrador extends Persona {
     @Column(nullable = false)
     private int nivelAcceso;
 
+     public Administrador() {
+        super();
+    }
+
+    public Administrador(String nombreCompleto, int edad, String cedula, String telefono, String areaEncargada, int nivelAcceso) {
+        super(nombreCompleto, edad, cedula, telefono);
+        this.areaEncargada = areaEncargada;
+        this.nivelAcceso = nivelAcceso;
+    }
+
     public Long getId() {
         return id;
     }
@@ -38,15 +48,7 @@ public class Administrador extends Persona {
         this.nivelAcceso = nivelAcceso;
     }
 
-    public Administrador() {
-        super();
-    }
-
-    public Administrador(String nombreCompleto, int edad, String cedula, String telefono, String areaEncargada, int nivelAcceso) {
-        super(nombreCompleto, edad, cedula, telefono);
-        this.areaEncargada = areaEncargada;
-        this.nivelAcceso = nivelAcceso;
-    }
+   
 
     @Override
     public void mostrarInformacion() {
