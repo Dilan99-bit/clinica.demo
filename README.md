@@ -124,7 +124,7 @@ spring.jpa.defer-datasource-initialization=true
 
 **⚠️ IMPORTANTE - Cambiar contraseña:**
 ```properties
-# Reemplaza "12345678" con tu contraseña real de MySQL
+# Reemplaza "********" con tu contraseña real de MySQL
 spring.datasource.password=TU_CONTRASEÑA_AQUI
 ```
 
