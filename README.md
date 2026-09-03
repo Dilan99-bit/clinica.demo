@@ -1,3 +1,13 @@
+## 👥 Datos del Equipo
+- **Integrantes:** 
+  - [ 1 Dilan Josue Galvis Vasquez]
+  - [ 2 Ronal Augusto Alvarez Morales]
+  - [ 3 Anlly Tatiana Zuluaga Villada]
+  - [ 4 Andres Felipe Restan Ospina]
+  - [ 5 Brayan Vasquez Bedolla]
+  - [ 5 Andrey Estrada Gonzalez]
+- **Horario / Jornada:** [ Jueves 6:15 PM - 9:30 PM]
+
 # 🏥 Sistema de Gestión de Clínica
 
 Sistema backend para la gestión integral de una clínica desarrollado con **Spring Boot 3.5.14** y **Java 21**. Arquitectura completamente persistida en base de datos relacional MySQL usando **JPA/Hibernate**. Listo para consumo externo mediante REST API.
